@@ -6,8 +6,8 @@ export const menuData = [
   },
   {
     id: 2,
-    title: "Homes",
-    link: "/homes",
+    title: "Houses",
+    link: "/houses",
   },
   {
     id: 3,

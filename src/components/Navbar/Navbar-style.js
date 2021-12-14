@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   z-index: 100;
   position: fixed;
   width: 100%;
+  background-color: gray;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -17,19 +18,21 @@ export const Wrapper = styled.div`
 `;
 
 export const NavLink = css`
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   padding: 0 1px;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
+  font-weight: 600;
 `;
 
 export const NavMenu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: black;
 `;
 
 export const Logo = styled(Link)`
@@ -50,7 +53,19 @@ export const LogoLabel = styled(Typography)`
 export const NavMenuLinks = styled(Link)`
   ${NavLink}
   margin-left: 12px;
-  width: 140px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 24px;
+  border-radius: 12px;
+  color: black;
+  font-weight: 600;
+
+  &:hover {
+    background: green;
+    transfrom: scale(1.05);
+  }
 
   @media only screen and (max-width: 768px) {
     width: 80px;
@@ -62,6 +77,14 @@ export const NavBtn = styled.div`
   display: flex;
   align-items: center;
   margin: 0 24px;
+  border-radius: 12px;
+  color: black;
+  font-weight: 600;
+
+  &:hover {
+    background: green;
+    transfrom: scale(1.05);
+  }
 
   @media only screen and (max-width: 768px) {
     width: 80px;
@@ -73,12 +96,23 @@ export const MenuBars = styled.div`
   display: none;
 
   @media only screen and (max-width: 768px) {
-    color: white;
+    color: black;
     display: block;
-    margin: 12px 12px;
+    margin: 12px 24px;
+    border: 1px solid black;
+    width: 36px;
+    padding-left: 5px;
+    padding-top: 3px;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 0;
+    border-radius: 8px;
+    background-color: lightgray;
+
+    &:hover {
+      background: green;
+      transfrom: scale(1.05);
+    }
   }
 `;
